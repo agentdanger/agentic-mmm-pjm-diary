@@ -35,7 +35,7 @@
 - [ ] Root cause identified (ingestion, transform, business-rule mismatch, source data)
 - [ ] Fix implemented or discrepancy explained and accepted (with tolerance)
 - [ ] Reconciliation re-run confirms the metrics now match
-- [ ] Fix / finding linked back to the engineering diary
+- [ ] Fix / finding recorded (commit / PR — never a diary reference)
 ```
 
 ---

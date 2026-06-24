@@ -7,7 +7,7 @@ This is the project-management sibling of the two engineering diaries:
 - [`../agentic-mmm-diary/`](../agentic-mmm-diary/) — MMM modeling / R&D work.
 - [`../InsightCoreAgenticDiary/`](../InsightCoreAgenticDiary/) — the InsightCore API + GUI reporting layer.
 
-Where those capture *what was built and why*, this one captures *how the work gets planned, sliced, and tracked* — and closes the loop by linking board items back to the engineering diaries when work ships.
+Where those capture *what was built and why*, this one captures *how the work gets planned, sliced, and tracked*. The board and the diaries are kept strictly separate — **board items never reference the diaries** (a hard rule; see [CLAUDE.md](CLAUDE.md) / [conventions.md](conventions.md)).
 
 ## How to use it
 

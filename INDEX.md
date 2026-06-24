@@ -13,7 +13,7 @@ Standing up this diary as the canonical guide for MMM project management on the 
 - **Labels:** `DataScience` always, `Modeling` almost always, plus specifics.
 - **Title prefixes:** `[Data]` `[Spike]` `[Build]` `[Deploy]` `[Delivery]` `[Bug]` `[QA]`.
 - **Statuses:** Backlog → In Progress → Done. New work lands in Backlog.
-- **Loop:** a Story moving to Done links back to the engineering diary's session/commit.
+- **No diary refs (hard rule):** board items never reference the agentic diaries — see [conventions.md](conventions.md).
 
 ## Reference
 

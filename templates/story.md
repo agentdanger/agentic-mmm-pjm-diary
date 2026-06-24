@@ -35,4 +35,4 @@ Prefixes: `[Data]` `[Spike]` `[Build]` `[Deploy]` `[Delivery]` `[Bug]` `[QA]` (s
 - [ ] Acceptance criteria are verifiable outcomes, not activities
 - [ ] `DataScience` (+ `Modeling` + specific) labels set
 - [ ] Lands in Backlog
-- [ ] (At Done) linked back to the engineering diary session/commit
+- [ ] (At Done) where the work landed is recorded (commit / notebook / PR — never a diary reference)

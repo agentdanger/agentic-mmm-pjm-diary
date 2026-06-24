@@ -15,7 +15,7 @@ The team's regular cadence (default: a short daily async check-in, with a live w
 
 ## Steps — walk the board right to left
 
-1. **Done since last time** — what moved to Done? Confirm each is genuinely done (acceptance criteria checked, linked back to the engineering diary). Celebrate, then move on.
+1. **Done since last time** — what moved to Done? Confirm each is genuinely done (acceptance criteria checked, output shipped). Celebrate, then move on.
 2. **In Progress** — for each item, focus on *flow*: is it moving? Is anything **blocked**? Who needs what to unblock it? Note blockers as issue comments.
 3. **WIP check** — is too much in progress at once? If so, the team finishes before pulling new work.
 4. **Ready to start** — only if there's capacity, pull the top Backlog story. Confirm it passes the trackability checklist (Definition of Ready) before it goes In Progress.

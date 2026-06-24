@@ -57,9 +57,9 @@ Use `createJiraIssue` with: `cloudId`, `projectKey: "AW"`, `issueTypeName`, `sum
 
 To move an item: `getTransitionsForJiraIssue` → `transitionJiraIssue`. To add context: `addCommentToJiraIssue`.
 
-## Closing the loop with the engineering diaries
+## Hard rule: never reference the diaries on the board
 
-When a Story moves to **Done**, it should reference where the work actually landed — the relevant session entry or commit SHA in [`../agentic-mmm-diary/`](../agentic-mmm-diary/) or [`../InsightCoreAgenticDiary/`](../InsightCoreAgenticDiary/). Add it as a comment on the issue (and in the Story's Definition-of-Done check). This keeps planning and engineering in sync across the three diaries.
+Board items — issue **descriptions, acceptance criteria, comments, and titles** — must **never reference the agentic diaries** (this PM diary or the modeling / InsightCore diaries): no session-entry names, no file paths into a diary, no "see the diary" pointers. The Kanban board stands on its own. You may reference real work artifacts (notebook filenames, commit SHAs, datasets) and other Jira keys — never a diary. Apply this when drafting, and strip any diary reference you find on an existing item. (These diaries may still cross-reference each other internally — the rule is about the **Jira board**, not these notes.)
 
 ## When to write a log entry
 

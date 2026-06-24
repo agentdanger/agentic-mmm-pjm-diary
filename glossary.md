@@ -13,7 +13,7 @@
 
 ## D
 
-- **Definition of Done (DoD)** — The standard conditions every **Story** must meet to be Done, beyond its own **acceptance criteria** (output shipped, work linked back to the engineering diary, status moved). See [conventions.md](conventions.md).
+- **Definition of Done (DoD)** — The standard conditions every **Story** must meet to be Done, beyond its own **acceptance criteria** (output shipped, where it landed recorded, status moved — never a diary reference). See [conventions.md](conventions.md).
 - **Definition of Ready (DoR)** — The conditions an item must meet before it can be created or pulled into work. Encoded as the **trackability checklist** in [conventions.md](conventions.md).
 
 ## E

@@ -67,10 +67,14 @@ A Story is Done when:
 
 - [ ] All acceptance criteria are checked
 - [ ] Output is where it should live (artifact deployed, dataset landed, deck delivered, fix merged)
-- [ ] The work is **linked back to the engineering diary** — a comment on the issue pointing to the session entry or commit SHA in `../agentic-mmm-diary/` or `../InsightCoreAgenticDiary/`
+- [ ] Where the work landed is recorded on the issue (commit SHA, notebook, or PR — **never a diary reference**; see the hard rule below)
 - [ ] Status moved to **Done** (don't leave finished work In Progress)
 
 An Epic is Done when its stories are Done and its success criteria are met. An Initiative is rarely "Done" — it's an ongoing capability.
+
+## Hard rule: no diary references on the board
+
+Board items — descriptions, acceptance criteria, comments, titles — **never reference the agentic diaries** (this PM diary or the modeling / InsightCore diaries): no session-entry names, no paths into a diary, no "see the diary" pointers. Reference real artifacts (notebook filenames, commit SHAs, datasets) and Jira keys instead. Strip any diary reference found on an existing item. The board and the diaries are kept strictly separate.
 
 ## WIP and flow
 

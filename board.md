@@ -60,7 +60,7 @@ Add specific labels that match how someone would later search for the item. Reus
 | `parent` | Epic key for a Story; Initiative key for an Epic |
 | `additional_fields` | `{ "labels": ["DataScience","Modeling", …] }`; add `{ "priority": {"name":"High"} }` only if non-default |
 
-Other tools: `searchJiraIssuesUsingJql` (read), `editJiraIssue` (update fields), `getTransitionsForJiraIssue` + `transitionJiraIssue` (status moves), `addCommentToJiraIssue` (notes / diary back-links).
+Other tools: `searchJiraIssuesUsingJql` (read), `editJiraIssue` (update fields), `getTransitionsForJiraIssue` + `transitionJiraIssue` (status moves), `addCommentToJiraIssue` (notes — never diary references).
 
 ## Useful JQL
 
