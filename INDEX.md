@@ -4,7 +4,7 @@
 
 ## Current Focus
 
-Standing up this diary as the canonical guide for MMM project management on the **AW — Automation workstreams** Kanban board. It encodes how the `DataScience` team writes Initiatives, Epics, and Stories, ensures every item is trackable, and runs its cadence. Agents **draft by default and write to Jira only on explicit request, confirming first.**
+This diary is the canonical guide for MMM project management on the **AW — Automation workstreams** Kanban board. It encodes how the `DataScience` team writes Initiatives, Epics, and Stories, ensures every item is trackable, and runs its cadence. The board is organized under **three Initiatives** — **v0.17** (`AW-152`, historical), **v0.19** (`AW-153`, active PyMC-Marketing model work), and **Modeling Infrastructure** (`AW-243`, cross-cutting non-versioned capabilities); see the routing rule in [board.md](board.md#initiative-structure). Agents **draft by default and write to Jira only on explicit request, confirming first**, and **never reference the diaries on board items** (hard rule — see [conventions.md](conventions.md)).
 
 ## How We Work (the essentials)
 
@@ -40,6 +40,7 @@ Standing up this diary as the canonical guide for MMM project management on the 
 
 > Running record of PM decisions, standups, grooming, and convention changes. One topic per file: `log/YYYY-MM-DD-slug-{handle}.md` from [log/_template.md](log/_template.md).
 
+- [2026-06-24: Migration Epics + the Modeling Infrastructure Initiative](log/2026-06-24-migration-epics-and-modeling-infrastructure-initiative-jperigo.md) — Built per-client 0.19.4 migration epics (WAB all-markets AW-230, JDS AW-234), each with `[Build]`/`[QA]`/`[Deploy]` stories; added WAB SSS (AW-239) + WAB/JDS input-documentation stories (AW-240/241); created the **Modeling Infrastructure** initiative (AW-243) and moved the Knowledge Base epic (AW-238) + Data SLA (AW-226) under it, off the v0.19 line. Adopted the hard rule that board items never reference the diaries.
 - [2026-06-23: v0.19 Consolidation + WAB New-Market / Enrichment Epics](log/2026-06-23-v0-19-consolidation-and-wab-epics-jperigo.md) — Created Epics AW-222 (New-Market Fit) + AW-227 (Model Inputs & Enrichment) with stories AW-223/224/225 and AW-228 (Spencer) / AW-229; added the Data Engineering SLA (AW-226); reopened AW-220; consolidated all seven active MMM epics under the v0.19 initiative (AW-153) by re-parenting AW-217/154/215; retired legacy AW-47. Codifies Spike/Bug as Story variants and the Initiative→Epic conversion mechanics.
 
 ## Related diaries
