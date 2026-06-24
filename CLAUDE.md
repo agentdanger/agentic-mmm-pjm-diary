@@ -10,7 +10,7 @@ This diary defines how AI agents interact with the Empower Data Science team's *
 | Cloud ID | `3d429359-bf0b-49b8-a372-f3c478c2f1a1` |
 | Project | **AW** — Automation workstreams (software, classic) |
 | Issue types | **Initiative** → **Epic** → **Story** (the only three; no native Bug or Spike) |
-| Statuses | Backlog → In Progress → Done |
+| Statuses | Backlog → Selected for Development → In Progress → Done |
 | Team label | `DataScience` (on every MMM item) |
 
 Full detail — IDs, the MCP field map, labels, the Spike/Bug-as-Story convention — is in [board.md](board.md). Naming, prefixes, parent-linking, and the trackability checklist are in [conventions.md](conventions.md).

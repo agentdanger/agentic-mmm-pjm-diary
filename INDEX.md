@@ -40,7 +40,7 @@ Standing up this diary as the canonical guide for MMM project management on the 
 
 > Running record of PM decisions, standups, grooming, and convention changes. One topic per file: `log/YYYY-MM-DD-slug-{handle}.md` from [log/_template.md](log/_template.md).
 
-- _(entries appear here as they're written)_
+- [2026-06-23: v0.19 Consolidation + WAB New-Market / Enrichment Epics](log/2026-06-23-v0-19-consolidation-and-wab-epics-jperigo.md) — Created Epics AW-222 (New-Market Fit) + AW-227 (Model Inputs & Enrichment) with stories AW-223/224/225 and AW-228 (Spencer) / AW-229; added the Data Engineering SLA (AW-226); reopened AW-220; consolidated all seven active MMM epics under the v0.19 initiative (AW-153) by re-parenting AW-217/154/215; retired legacy AW-47. Codifies Spike/Bug as Story variants and the Initiative→Epic conversion mechanics.
 
 ## Related diaries
 

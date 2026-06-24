@@ -26,9 +26,11 @@ AW exposes exactly three issue types. There is **no Bug, Spike, or Sub-task type
 
 ## Statuses (workflow)
 
-`Backlog` → `In Progress` → `Done`
+`Backlog` → `Selected for Development` → `In Progress` → `Done`
 
-New items land in **Backlog**. Move to **In Progress** only when work actually starts (respect WIP — see [conventions.md](conventions.md)). Move to **Done** only when the Definition of Done is met.
+New items land in **Backlog**. **Selected for Development** stages groomed, ready work pulled for the next cycle but not yet started. Move to **In Progress** only when work actually starts (respect WIP — see [conventions.md](conventions.md)). Move to **Done** only when the Definition of Done is met.
+
+Transition IDs (for `transitionJiraIssue`): Backlog `11`, Selected for Development `21`, In Progress `31`, Done `41`. Note: there is **no Cancelled / Won't-Do** state — retire a superseded item by moving it to **Done** with a comment explaining it's superseded, not completed.
 
 ## Priority
 
