@@ -32,7 +32,7 @@ The MMM / DataScience work is organized under **three Initiatives**. The specifi
 | --- | --- | --- |
 | **PyMC Bayesian MMM v0.17** | `AW-152` | Historical. The previous version line; only Done epics — nothing active. |
 | **PyMC Bayesian MMM v0.19** | `AW-153` | Active **model work** on pymc-marketing 0.19.x — the per-client model epics (WAB, JDS) and the version migrations. |
-| **Modeling Infrastructure** | `AW-243` | Cross-cutting, **non-versioned** capabilities that serve every model — the model knowledge base, the Data Engineering delivery SLA, tooling/environments, documentation standards. |
+| **Modeling Infrastructure MVP** | `AW-243` | A **bounded** set of cross-cutting, non-versioned capabilities every model needs — reproducible environment, data + ML engineering automation, artifact versioning/handoff, data SLAs, QA, knowledge base. **Done when those seven epics are done**; further infrastructure is a *later* initiative, not scope-creep here. |
 
 **Routing rule for a new epic:** if it's *model work on the current version line*, parent it under **AW-153**; if it's *infrastructure that serves all models* (not tied to a pymc-marketing version), parent it under **AW-243**. Historical/version-specific work stays under AW-152. Per-client model migrations get their own epic under AW-153 (e.g. WAB all-markets, JDS), each decomposed into `[Build]` re-architecture / `[QA]` / `[Deploy]` stories.
 

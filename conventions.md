@@ -12,6 +12,8 @@
 
 **Every Epic links to an Initiative. Every Story links to an Epic.** A parentless Epic or Story is the #1 way work falls off the board — Jira hierarchy reports and roadmaps won't show it.
 
+**Initiatives are bounded.** An initiative needs an explicit, achievable definition of done — the set of outcomes that, once met, mean it is *complete*. If an initiative reads as a perpetual catch-all ("anything related to X"), reframe it as a bounded **MVP**: enumerate the capabilities that make it done, make each one an epic, and declare the initiative Done when those epics are Done. Further work becomes a *later* initiative, not unbounded scope on this one. (Example: AW-243 *Modeling Infrastructure MVP* — done when its seven capability epics are done.)
+
 ### Spike and Bug are Story variants
 
 AW has no Bug or Spike issue type (see [board.md](board.md)). Express them as Stories:
