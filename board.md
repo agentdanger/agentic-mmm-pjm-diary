@@ -54,9 +54,23 @@ Labels are how items are grouped and found (AW has no separate component taxonom
 
 - **Team (always):** `DataScience`
 - **Domain (almost always):** `Modeling`
-- **Specific (as applicable):** `EDA`, `feature-engineering`, `report`, `deployment`, `dependency-upgrade`, `pymc-marketing`, `v0-19`, `demo-account`, `data`, `QA`, …
+- **Client (always, exactly one):** `client-whataburger` · `client-jdsports` · `client-sprouts` · `client-shared` (cross-client / methodology / platform). Find all of a client's work with `labels = client-<slug>`.
+- **Group / discipline (the doer):** `group-data-science` · `group-mlops` · `group-data-eng` · `group-analytics` · `group-platform`. See the rule below.
+- **Specific (as applicable):** `EDA`, `feature-engineering`, `report`, `deployment`, `dependency-upgrade`, `pymc-marketing`, `v0-19`, `demo-account`, `data`, `QA`, `environment`, `infrastructure`, `InsightCore`, `api`, `gui`, …
 
 Add specific labels that match how someone would later search for the item. Reuse existing labels before inventing new ones — check with a JQL `labels` query first.
+
+### Client and group label families (added 2026-06-25)
+
+Two prefixed families slice the board for the two standing meeting types — per-client teams, and the data-eng / MLOps / data-science group.
+
+- **`client-*` (exactly one per item):** the client a work item serves; `client-shared` for cross-client, methodology, infrastructure, or platform work. Initiatives that span clients are `client-shared`.
+- **`group-*` (the discipline that does the work, distinct from assignee):**
+  - **`group-data-science` is on EVERY item** — it is the Modeling-board membership label, so all DataScience work surfaces there. It therefore doubles as "data-science is the doer" by default.
+  - Add **one** further `group-*` only when the doer is *not* data science: `group-mlops` (production ML path — env, runs, training-dataset build, artifact handoff, deploy, dependency/env upgrades), `group-data-eng` (source feeds, ingestion, data SLA, data contracts), `group-analytics` (intake / business requirements / client readouts), `group-platform` (InsightCore API + GUI app/front-end engineering).
+  - So a pure data-science item carries only `group-data-science`; an MLOps deploy carries `group-data-science` + `group-mlops`. To find a discipline's own work: `labels = group-mlops` (etc.). The whole technical group at once: `labels in (group-data-science, group-mlops, group-data-eng, group-platform)`.
+
+Note the deliberate near-collision: **`DataScience`** (the team — on everything, denotes the board) vs **`group-data-science`** (the discipline — also on everything by the membership rule). They coexist; `group-*` is the family you slice the discipline meeting with.
 
 ## MCP field map (creating / editing via tools)
 
