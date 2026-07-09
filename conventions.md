@@ -74,9 +74,9 @@ A Story is Done when:
 
 An Epic is Done when its stories are Done and its success criteria are met. An Initiative is rarely "Done" — it's an ongoing capability.
 
-## Hard rule: no diary references on the board
+## Hard rule: no diary references anywhere in Atlassian
 
-Board items — descriptions, acceptance criteria, comments, titles — **never reference the agentic diaries** (this PM diary or the modeling / InsightCore diaries): no session-entry names, no paths into a diary, no "see the diary" pointers. Reference real artifacts (notebook filenames, commit SHAs, datasets) and Jira keys instead. Strip any diary reference found on an existing item. The board and the diaries are kept strictly separate.
+**No Atlassian content — across all their products — ever references the agentic diaries** (this PM diary or the modeling / InsightCore diaries): no session-entry names, no paths into a diary, no "see the diary" pointers. This covers Jira issues (descriptions, acceptance criteria, comments, titles) **and Confluence (pages, comments, attachments)**, and extends to any Atlassian product adopted later. Reference real artifacts (notebook filenames, commit SHAs, datasets), Jira keys, and Confluence pages instead. Strip any diary reference found in existing content. Atlassian content stands on its own; the diaries stay strictly separate. *(Extended from board-only to Atlassian-wide 2026-07-09 — see the log entry.)*
 
 ## WIP and flow
 

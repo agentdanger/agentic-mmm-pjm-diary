@@ -57,9 +57,9 @@ Use `createJiraIssue` with: `cloudId`, `projectKey: "AW"`, `issueTypeName`, `sum
 
 To move an item: `getTransitionsForJiraIssue` → `transitionJiraIssue`. To add context: `addCommentToJiraIssue`.
 
-## Hard rule: never reference the diaries on the board
+## Hard rule: never reference the diaries in any Atlassian product
 
-Board items — issue **descriptions, acceptance criteria, comments, and titles** — must **never reference the agentic diaries** (this PM diary or the modeling / InsightCore diaries): no session-entry names, no file paths into a diary, no "see the diary" pointers. The Kanban board stands on its own. You may reference real work artifacts (notebook filenames, commit SHAs, datasets) and other Jira keys — never a diary. Apply this when drafting, and strip any diary reference you find on an existing item. (These diaries may still cross-reference each other internally — the rule is about the **Jira board**, not these notes.)
+**All Atlassian content** — Jira issue descriptions, acceptance criteria, comments, and titles, **and Confluence pages and comments** (and any Atlassian product adopted later) — must **never reference the agentic diaries** (this PM diary or the modeling / InsightCore diaries): no session-entry names, no file paths into a diary, no "see the diary" pointers. Atlassian content stands on its own. You may reference real work artifacts (notebook filenames, commit SHAs, datasets), other Jira keys, and Confluence pages — never a diary. Apply this when drafting, and strip any diary reference you find in existing content. (These diaries may still cross-reference each other internally — the rule is about **Atlassian products**, not these notes.)
 
 ## When to write a log entry
 
