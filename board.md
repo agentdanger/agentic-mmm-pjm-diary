@@ -26,15 +26,19 @@ AW exposes exactly three issue types. There is **no Bug, Spike, or Sub-task type
 
 ## Initiative structure
 
-The MMM / DataScience work is organized under **three Initiatives**. The specific epics and stories under each live in Jira (the source of truth); this records the durable organizing principle — what *kind* of work belongs where.
+The MMM / DataScience work is organized under **five Initiatives** — three model/infrastructure lines, plus two reporting-layer lines added 2026-06-24. The specific epics and stories under each live in Jira (the source of truth); this records the durable organizing principle — what *kind* of work belongs where.
 
 | Initiative | Key | Holds |
 | --- | --- | --- |
 | **PyMC Bayesian MMM v0.17** | `AW-152` | Historical. The previous version line; only Done epics — nothing active. |
 | **PyMC Bayesian MMM v0.19** | `AW-153` | Active **model work** on pymc-marketing 0.19.x — the per-client model epics (WAB, JDS) and the version migrations. |
 | **Modeling Infrastructure MVP** | `AW-243` | A **bounded** set of cross-cutting, non-versioned capabilities every model needs — reproducible environment, automated data capture/ingestion, data delivery SLAs, development/production training datasets, automated model refresh/runs, artifact versioning/handoff, QA, knowledge base. **Done when those eight epics are done**; further infrastructure is a *later* initiative, not scope-creep here. |
+| **InsightCore API v2** | `AW-248` | The **reporting/serving layer's** API — a versioned, contract-first platform serving trained artifacts. Endpoint versioning, artifact contracts, scenario planning & performance, multi-tenancy/config, quality & ops. Not model work. |
+| **InsightCore GUI v2** | `AW-249` | The **reporting/serving layer's** front end — reporting surfaces, theming, API consumption, shared state, build/deploy. Not model work. |
 
-**Routing rule for a new epic:** if it's *model work on the current version line*, parent it under **AW-153**; if it's *infrastructure that serves all models* (not tied to a pymc-marketing version), parent it under **AW-243**. Historical/version-specific work stays under AW-152. Per-client model migrations get their own epic under AW-153 (e.g. WAB all-markets, JDS), each decomposed into `[Build]` re-architecture / `[QA]` / `[Deploy]` stories.
+**Routing rule for a new epic:** if it's *model work on the current version line*, parent it under **AW-153**; if it's *infrastructure that serves all models* (not tied to a pymc-marketing version), parent it under **AW-243**; if it's *the InsightCore reporting layer*, parent it under **AW-248** (API) or **AW-249** (GUI). Historical/version-specific work stays under AW-152. Per-client model migrations get their own epic under AW-153 (e.g. WAB all-markets, JDS), each decomposed into `[Build]` re-architecture / `[QA]` / `[Deploy]` stories.
+
+**Label note for the InsightCore lines:** they carry `InsightCore` + `api`/`gui` and deliberately **omit `Modeling`** — the reporting repos consume trained artifacts, and mixing them into `Modeling` would blur the search boundary that label exists to keep. Work spanning both layers gets an epic under each rather than one epic with two parents (an epic has one parent, and the outcomes are separable).
 
 ## Statuses (workflow)
 
