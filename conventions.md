@@ -14,6 +14,14 @@
 
 **Initiatives are bounded.** An initiative needs an explicit, achievable definition of done — the set of outcomes that, once met, mean it is *complete*. If an initiative reads as a perpetual catch-all ("anything related to X"), reframe it as a bounded **MVP**: enumerate the capabilities that make it done, make each one an epic, and declare the initiative Done when those epics are Done. Further work becomes a *later* initiative, not unbounded scope on this one. (Example: AW-243 *Modeling Infrastructure MVP* — done when its seven capability epics are done.)
 
+### A discovery epic carries the work needed to reach its own verdict
+
+A discovery / identification epic ends in a **go/no-go verdict**, and its implementation epic is created **only when that verdict lands** — so a no-go closes the line with a documented negative and no implementation epic is ever created. That boundary is what makes stopping cheap. Don't dissolve it by standing up the implementation epic early just to home preparatory work.
+
+The corollary: **whatever is needed to reach the verdict belongs to the discovery epic** — including feature engineering into the **development** dataset when the gating spike requires a capacity-test fit. Scope such an epic's exclusions against *production* ("production feature engineering, model changes, deployment") rather than excluding feature engineering outright, or the epic will exclude work its own spike depends on. Dev columns graduate to the production dataset only on a go verdict, via the dev/prod promotion path (AW-256).
+
+Precedent: AW-259 derived the WAB video-breakout columns into the dev training dataset under AW-227, the client epic that owned the breakout, referencing rather than absorbing the infrastructure epic. AW-253 was amended to match on 2026-09-02.
+
 ### Spike and Bug are Story variants
 
 AW has no Bug or Spike issue type (see [board.md](board.md)). Express them as Stories:
