@@ -3,8 +3,8 @@ date: 2026-09-11
 author: Courtney <jperigo@gmail.com>
 type: grooming
 scope: [board]
-summary: Groomed the day's InsightCore work into two epics — one API (under AW-248), one GUI (under AW-249) — with ten and eight stories respectively, most already Done with commits recorded, four API follow-ups in Backlog. Drafted to the templates; creation is pending the Atlassian connector being re-authorized, so no keys yet.
-issues: [AW-248, AW-249]
+summary: Groomed the day's InsightCore work into two epics — AW-348 (API, under AW-248) and AW-349 (GUI, under AW-249) — with nine and eight stories; fourteen Done with commits recorded, three API follow-ups in Backlog, one dropped as a duplicate of AW-321. Created and transitioned the same day once the connector was back.
+issues: [AW-248, AW-249, AW-348, AW-349, AW-321]
 ---
 
 # InsightCore Horizon, Lagged Effect and Queue Work Groomed into Two Epics
@@ -27,7 +27,13 @@ Full bodies, drafted to the templates with acceptance criteria and recorded comm
 
 The bug-as-story convention fits the incident work: each defect has a reproduce, expected and actual, and each closed on a commit or a recorded box-side change. The rank-agreement check is a `[QA]` story rather than a spike because it validated a shipped capability and its verdict routes into a named `[Build]` follow-up. The four Backlog stories are the concrete next moves the day's measurements point at, not a roadmap; the largest of them, solving with trailing history, is the one that determines whether the optimizer can beat a vetted plan at all.
 
+## Keys (created 2026-09-11 after the connector reconnected)
+
+- **AW-348** — API epic, In Progress. Done: AW-350 after-window media, AW-351 objective horizon, AW-352 queue cap, AW-353 throttle bug, AW-354 deploy path, AW-355 rank-agreement QA. Backlog: AW-356 trailing history, AW-357 chained scores first, AW-358 deploy wrappers and deployed commit.
+- **AW-349** — GUI epic, Done. AW-359 objective choice and chip, AW-360 lagged-effect section, AW-361 comparison CSV, AW-362 market attribution in comparison, AW-363 multi-submit, AW-364 "not yet scored" bug, AW-365 structured refusals bug, AW-366 GUI auto-deploy bug.
+- The thinned-draws spike was dropped from the drafts: AW-321 already covers it.
+
 ## Follow-ups
 
-- Re-authorize the Atlassian connector; create the two epics and eighteen stories from the drafts, transition the Done ones with their commits, and record the keys here.
-- Assign an owner to the trailing-history story before pulling it into In Progress.
+- Assign an owner to AW-356 (trailing history) before pulling it into In Progress; it is the one story that decides whether the optimizer can beat a vetted plan.
+- AW-348 closes when AW-356, AW-357 and AW-358 are Done.
