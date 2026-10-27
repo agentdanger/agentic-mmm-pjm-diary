@@ -58,7 +58,7 @@ Labels are how items are grouped and found (AW has no separate component taxonom
 
 - **Team (always):** `DataScience`
 - **Domain (almost always):** `Modeling`
-- **Client (always, exactly one):** `client-whataburger` · `client-jdsports` · `client-sprouts` · `client-shared` (cross-client / methodology / platform). Find all of a client's work with `labels = client-<slug>`.
+- **Client (always, exactly one):** `client-whataburger` · `client-jdsports` · `client-hometap` (from 2026-10-26) · `client-sprouts` · `client-shared` (cross-client / methodology / platform). Find all of a client's work with `labels = client-<slug>`.
 - **Group / discipline (the doer):** `group-data-science` · `group-mlops` · `group-data-eng` · `group-analytics` · `group-platform`. See the rule below.
 - **Specific (as applicable):** `EDA`, `feature-engineering`, `report`, `deployment`, `dependency-upgrade`, `pymc-marketing`, `v0-19`, `demo-account`, `data`, `QA`, `environment`, `infrastructure`, `InsightCore`, `api`, `gui`, …
 
@@ -91,6 +91,8 @@ Note the deliberate near-collision: **`DataScience`** (the team — on everythin
 | `additional_fields` | `{ "labels": ["DataScience","Modeling", …] }`; add `{ "priority": {"name":"High"} }` only if non-default |
 
 Other tools: `searchJiraIssuesUsingJql` (read), `editJiraIssue` (update fields), `getTransitionsForJiraIssue` + `transitionJiraIssue` (status moves), `addCommentToJiraIssue` (notes — never diary references).
+
+**Checklists need plain items (found 2026-10-26).** With `contentFormat: "markdown"`, a `- [ ]` list becomes a Jira checklist only when no item contains inline formatting. One backticked path or bold word in any item turns the whole list into plain bullets showing a literal "[ ]". Keep acceptance-criteria items plain; inline code is fine in the other sections. Read back after creating: a checklist returns `- [ ]`, a broken one `* \[ \]`. `createJiraIssue` also takes `transition: {"id": "41"}` to create an item straight into Done.
 
 ## Useful JQL
 
